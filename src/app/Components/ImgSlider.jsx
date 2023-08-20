@@ -13,7 +13,7 @@ import Image from "next/image";
 const ImgSlider = () => {
   const settings = {
     dots: true,
-    fade: true,
+    fade:true,
     centerMode: true,
     infinite: true,
     speed: 800,
@@ -24,7 +24,7 @@ const ImgSlider = () => {
 
   const Wrap = styled.div`
     cursor: pointer;
-    height: 85vh;
+    height: 50vh;
     img {
       //border: 4px solid black;
       width: 100%;
@@ -32,7 +32,7 @@ const ImgSlider = () => {
 
       transition-duration: 500ms;
       &:hover {
-        border: 4px solid rgba (249, 249, 249, 0.8);
+        border: 1px solid rgba (249, 249, 249, 0.8);
       }
     }
   `;
@@ -58,20 +58,23 @@ const ImgSlider = () => {
       padding-right: 20px;
     }
     .slick-dots li button:before {
-      font-size: 30px;
+      font-size: 16px;
       color: white;
     }
 
     .slick-next {
+      position:absolute;
+      top:50%;
       right: 10px;
-      opacity: 0;
+      display:hidden;
+      opacity: 1;
     }
     .slick-prev {
+      position:absolute;
+      top:50%;
       left: 10px;
-      opacity: 0;
-    }
-    .slick-next {
-      padding: 50px;
+      display:hidden;
+      opacity: 1;
     }
     .slick-next:before {
     }
@@ -81,21 +84,21 @@ const ImgSlider = () => {
 
   return (
     <div className=" w-full h-full relative">
-      <div className=" absolute top-0 left-0 bg-gray-800 min-w-full min-h-full -z-10"></div>
       <Carousel
         {...settings}
-        className=" -z-0 absolute top-0 left-0 w-full h-full"
+        className=" w-full h-full relative"
       >
-        <Wrap className="">
+        <Wrap className="relative w-full">
           <Image
             // src={"https://cdn.pixabay.com/photo/2019/04/10/20/54/police-4118199_1280.png"}
             src={img1}
-            className=" w-screen h-[calc(100vh-100px)] -z-20"
+            className=" w-full h-full"
             width={1000}
             height={800}
             alt="badag"
           />
-          <div className=" absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] text-white w-full text-left p-5">
+          <div className=" absolute top-0 left-0 bg-gray-800/50 min-w-full min-h-full z-10 "></div>
+          <div className=" z-20 absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] text-white w-full text-left p-5">
             <div className="">
               <h1 className=" text-2xl sm:text-4xl my-5 md:text-6xl font-extrabold">
                 Welcome to UP Prosecution
@@ -108,16 +111,18 @@ const ImgSlider = () => {
           </div>
         </Wrap>
 
-        <Wrap className=" relative">
+        <Wrap className=" relative w-full">
           <Image
             // src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU4m9aXzzXzPVB_gh8-gA55S1WLEOZhKRKZ0vHSIjY1EoWzl3BnfD8We_fBLehKJ7qHGA&usqp=CAU"}
             src={img2}
-            className=" w-screen h-[calc(100vh-100px)] -z-20"
+            className=" w-full h-full"
             width={1000}
             height={800}
             alt="badag"
           />
-          <div className=" absolute  top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
+          <div className=" absolute top-0 left-0 bg-gray-800/50 min-w-full min-h-full z-10 "></div>
+
+          <div className=" absolute z-20  top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
             <div className="">
               <h1 className=" text-2xl sm:text-4xl my-5 md:text-6xl font-extrabold">
                 Technology Agnostic
@@ -130,16 +135,18 @@ const ImgSlider = () => {
           </div>
         </Wrap>
 
-        <Wrap className="relative">
+        <Wrap className="relative w-full">
           <Image
             // src={"https://cdn.pixabay.com/photo/2019/04/10/20/54/police-4118199_1280.png"}
             src={img3}
-            className=" w-screen h-[calc(100vh-100px)] -z-20"
+            className=" w-full h-full"
             width={1000}
             height={800}
             alt="badag"
           />
-          <div className=" absolute  top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
+          <div className=" absolute top-0 left-0 bg-gray-800/50 min-w-full min-h-full z-10 "></div>
+
+          <div className=" absolute z-20  top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
             <div className="">
               <h1 className=" text-2xl sm:text-4xl my-5 md:text-6xl font-extrabold">
                 Dotclu recognised as Leader in
@@ -155,16 +162,18 @@ const ImgSlider = () => {
           </div>
         </Wrap>
 
-        <Wrap className="relative">
+        <Wrap className="relative w-full">
           <Image
             // src={"https://www.wcwonline.org/images/stories/news/ladyjusticebronze.jpg"}
             src={img1}
-            className=" max-w-screen h-[calc(100vh-100px)] -z-20"
+            className="  w-full h-full"
             width={1000}
             height={800}
             alt="badag"
           />
-          <div className=" absolute top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
+          <div className=" absolute top-0 left-0 bg-gray-800/50 min-w-full min-h-full z-10 "></div>
+
+          <div className=" absolute z-20 top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
             <div className="">
               <h1 className=" text-2xl sm:text-4xl my-5 md:text-6xl font-extrabold">
                 Webby 2023 Honoree

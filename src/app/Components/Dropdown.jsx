@@ -18,16 +18,17 @@ const DropDown = () => {
   });
 
   return (
-    <div className=" flex flex-row items-center justify-center px-3">
+    <div className=" hidden lg:flex flex-row items-center justify-center px-3">
       {DropDownMenu.map((menuInfo, index) => (
         <div
           key={index}
-          className=" relative group flex justify-center items-center px-2 py-1 text-white"
+          className=" relative group flex flex-col justify-center items-center px-2 py-1 text-white"
         >
           <button ref={divRef} onClick={() => setIsOpen(!IsOpen)}>
             {menuInfo.title}{" "}
           </button>
-          <div className=" invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in delay-100 top-[32px] text-xs z-50 w-[200px] p-2 flex flex-col items-center justify-center h-fit bg-gray-100 rounded-md absolute left-[50%] translate-x-[-50%]">
+          <div className="h-[1px] w-0 bg-white group-hover:min-w-[100%] transition-all duration-200 ease-in"></div>
+          <div className=" invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in delay-100 top-[50px] text-xs z-50 w-[200px] p-2 flex flex-col items-center justify-center h-fit bg-gray-100 rounded-md absolute left-[50%] translate-x-[-50%]">
             {menuInfo.Link.map((module, i) => {
               return (
                 <div
