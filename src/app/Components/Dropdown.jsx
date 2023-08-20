@@ -22,7 +22,7 @@ const DropDown = () => {
       {DropDownMenu.map((menuInfo, index) => (
         <div
           key={index}
-          className=" relative group flex flex-col justify-center items-center px-2 py-1 text-white"
+          className=" relative group flex flex-col justify-center items-center px-2 py-1 text-black"
         >
           <button ref={divRef} onClick={() => setIsOpen(!IsOpen)}>
             {menuInfo.title}{" "}

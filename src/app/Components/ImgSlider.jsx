@@ -4,9 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import Slider from "react-slick";
-import img1 from "../../../public/Images/img1.png";
-import img2 from "../../../public/Images/prosecution.jpg";
-import img3 from "../../../public/Images/img3.jpeg";
+import img1 from "../../../public/Images/i-day2023.jpg";
+import img2 from "../../../public/Images/ncrc.jpg";
+import img3 from "../../../public/Images/right-to-repair.jpg";
+import img4 from "../../../public/Images/sahkar-se-samriddhi.jpg";
+
 
 import Image from "next/image";
 
@@ -98,7 +100,7 @@ const ImgSlider = () => {
             alt="badag"
           />
           <div className=" absolute top-0 left-0 bg-gray-800/50 min-w-full min-h-full z-10 "></div>
-          <div className=" z-20 absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] text-white w-full text-left p-5">
+          {/* <div className=" z-20 absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] text-white w-full text-left p-5">
             <div className="">
               <h1 className=" text-2xl sm:text-4xl my-5 md:text-6xl font-extrabold">
                 Welcome to Department Prosecution
@@ -107,7 +109,7 @@ const ImgSlider = () => {
                 Upholding Law, Dismantling Crime.
               </p>
             </div>
-          </div>
+          </div> */}
         </Wrap>
 
         <Wrap className=" relative w-full">
@@ -121,17 +123,17 @@ const ImgSlider = () => {
           />
           <div className=" absolute top-0 left-0 bg-gray-800/50 min-w-full min-h-full z-10 "></div>
 
-          <div className=" absolute z-20  top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
+          {/* <div className=" absolute z-20  top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
             <div className="">
               <h1 className=" text-2xl sm:text-4xl my-5 md:text-6xl font-extrabold">
                 A Fair Society: No Tolerance for Injustice.
               </h1>
-              {/* <p className=" mb-5 text-xs md:text-sm">
+              <p className=" mb-5 text-xs md:text-sm">
                 We dont focus on technologies, we focus on solution whatever
                 technology it takes
-              </p> */}
+              </p>
             </div>
-          </div>
+          </div> */}
         </Wrap>
 
         <Wrap className="relative w-full">
@@ -145,26 +147,26 @@ const ImgSlider = () => {
           />
           <div className=" absolute top-0 left-0 bg-gray-800/50 min-w-full min-h-full z-10 "></div>
 
-          <div className=" absolute z-20  top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
+          {/* <div className=" absolute z-20  top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
             <div className="">
               <h1 className=" text-2xl sm:text-4xl my-5 md:text-6xl font-extrabold">
                 Prosecuting the Guilty, Protecting the Innocent
               </h1>
-              {/* <h1 className=" text-2xl my-5  font-extrabold">
+              <h1 className=" text-2xl my-5  font-extrabold">
                 the Zinnov Zones ER&D report,2022
               </h1>
               <p className=" mb-5 text-xs md:text-sm">
                 Adjust The Customer&apos;s IT Infrastructure To New,Ever Growing
                 Business & Technical Requirements
-              </p> */}
+              </p>
             </div>
-          </div>
+          </div> */}
         </Wrap>
 
         <Wrap className="relative w-full">
           <Image
             // src={"https://www.wcwonline.org/images/stories/news/ladyjusticebronze.jpg"}
-            src={img1}
+            src={img4}
             className="  w-full h-full"
             width={1000}
             height={800}
@@ -172,18 +174,19 @@ const ImgSlider = () => {
           />
           <div className=" absolute top-0 left-0 bg-gray-800/50 min-w-full min-h-full z-10 "></div>
 
-          <div className=" absolute z-20 top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
+          {/* <div className=" absolute z-20 top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
             <div className="">
               <h1 className=" text-2xl sm:text-4xl my-5 md:text-6xl font-extrabold">
                 Crimes Exposed, Justice Imposed.
               </h1>
-              {/* <p className="text-xs md:text-sm">
+              <p className="text-xs md:text-sm">
                 Globally recognised for Apps,dApps and Data Management
               </p>
-              <p className=" mb-5 text-xs md:text-sm">Oscar Of Internet</p> */}
+              <p className=" mb-5 text-xs md:text-sm">Oscar Of Internet</p>
             </div>
-          </div>
+          </div> */}
         </Wrap>
+        
       </Carousel>
     </div>
   );

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import img1 from "../../../public/Images/g-20-logo.jpg"
-import img2 from "../../../public/Images/health_id.jpg"
+import img1 from "../../../public/Images/g-20-logo.jpg";
+import img2 from "../../../public/Images/health_id.jpg";
 
 const CenterText = () => {
   return (
@@ -20,9 +20,9 @@ const CenterText = () => {
           boundary completely collapses
         </p>
       </div>
-      <div className=" flex flex-row items-center justify-around gap-5">
-        <div className="flex flex-row gap-3">
-          <div className=" bg-white text-black w-fit p-3 ">
+      <div className=" flex flex-row items-center justify-around gap-5 px-10 h-full">
+        <div className="flex flex-row gap-3 h-full">
+          <div className=" bg-white text-black w-fit p-3  h-full">
             <div className="bg-gray-300 p-2">
               <h1>NEWS & Press Release</h1>
             </div>
@@ -43,7 +43,10 @@ const CenterText = () => {
                   />
                 </svg>
 
-                <span>A high-level delegation led by the Union Minister of Fisheries...</span>
+                <span>
+                  A high-level delegation led by the Union Minister of
+                  Fisheries...
+                </span>
               </div>
               <div className="flex flex-row items-center hover:bg-blue-500 hover:text-white px-1 py-2 transition-all duration-300 ease-in">
                 <svg
@@ -61,7 +64,9 @@ const CenterText = () => {
                   />
                 </svg>
 
-                <span>Dr Jitendra Singh met UP CM Yogi Adityanath in Lucknow,...</span>
+                <span>
+                  Dr Jitendra Singh met UP CM Yogi Adityanath in Lucknow,...
+                </span>
               </div>
               <div className="flex flex-row items-center hover:bg-blue-500 hover:text-white px-1 py-2 transition-all duration-300 ease-in">
                 <svg
@@ -79,7 +84,10 @@ const CenterText = () => {
                   />
                 </svg>
 
-                <span>Three-day National Thematic Workshop on Localization of LSDGs...</span>
+                <span>
+                  Three-day National Thematic Workshop on Localization of
+                  LSDGs...
+                </span>
               </div>
               <div className="flex flex-row items-center hover:bg-blue-500 hover:text-white px-1 py-2 transition-all duration-300 ease-in">
                 <svg
@@ -115,7 +123,9 @@ const CenterText = () => {
                   />
                 </svg>
 
-                <span>Shri Nitin Gadkari to launch the Bharat New Car Assessment...</span>
+                <span>
+                  Shri Nitin Gadkari to launch the Bharat New Car Assessment...
+                </span>
               </div>
               <div className="flex flex-row items-center hover:bg-blue-500 hover:text-white px-1 py-2 transition-all duration-300 ease-in">
                 <svg
@@ -138,22 +148,9 @@ const CenterText = () => {
             </div>
           </div>
         </div>
-        <div className="w-[280px] flex flex-col gap-5">
-            <div className="flex flex-col w-full border-black border-[1px]">
-                <Image src={img2} width={280} height={100} />
-                <div className="w-full bg-white p-2">
-                    <span className=" text-black text-xs">Health ID - Key to your Digital Healthcare Journey</span>
-                </div>
-            </div>
-            <div className="flex flex-col w-full border-black border-[1px]">
-                <Image src={img1} width={280} height={100} />
-                <div className="w-full bg-white p-2">
-                    <span className=" text-black text-xs">One Earth One Family One Future</span>
-                </div>
-            </div>
-        </div>
-        <div className="flex flex-row gap-3">
-          <div className=" bg-white text-black w-fit p-3 ">
+
+        <div className="flex flex-row gap-3 h-full">
+          <div className=" bg-white text-black w-fit p-3 h-full ">
             <div className="bg-gray-300 p-2">
               <h1>Information</h1>
             </div>
@@ -192,7 +189,9 @@ const CenterText = () => {
                   />
                 </svg>
 
-                <span>Website of Board of Apprenticeship Training (Southern...</span>
+                <span>
+                  Website of Board of Apprenticeship Training (Southern...
+                </span>
               </div>
               <div className="flex flex-row items-center hover:bg-blue-500 hover:text-white px-1 py-2 transition-all duration-300 ease-in">
                 <svg
@@ -210,7 +209,9 @@ const CenterText = () => {
                   />
                 </svg>
 
-                <span>Micro Small and Medium Enterprises Development Institute of...</span>
+                <span>
+                  Micro Small and Medium Enterprises Development Institute of...
+                </span>
               </div>
               <div className="flex flex-row items-center hover:bg-blue-500 hover:text-white px-1 py-2 transition-all duration-300 ease-in">
                 <svg
@@ -228,7 +229,9 @@ const CenterText = () => {
                   />
                 </svg>
 
-                <span>ENVIS Centre of Chhattisgarh Environment Conservation Board</span>
+                <span>
+                  ENVIS Centre of Chhattisgarh Environment Conservation Board
+                </span>
               </div>
               <div className="flex flex-row items-center hover:bg-blue-500 hover:text-white px-1 py-2 transition-all duration-300 ease-in">
                 <svg
@@ -246,7 +249,9 @@ const CenterText = () => {
                   />
                 </svg>
 
-                <span>Website of Committee of Parliament on Official Language</span>
+                <span>
+                  Website of Committee of Parliament on Official Language
+                </span>
               </div>
               <div className="flex flex-row items-center hover:bg-blue-500 hover:text-white px-1 py-2 transition-all duration-300 ease-in">
                 <svg
@@ -264,8 +269,28 @@ const CenterText = () => {
                   />
                 </svg>
 
-                <span>Advanced Training Institute for Electronics and Process...</span>
+                <span>
+                  Advanced Training Institute for Electronics and Process...
+                </span>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-[280px] flex flex-col gap-5 h-full justify-between items-center">
+          <div className="flex flex-col w-full border-black border-[1px]">
+            <Image src={img2} width={280} height={100} />
+            <div className="w-full bg-white p-2">
+              <span className=" text-black text-xs">
+                Health ID - Key to your Digital Healthcare Journey
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col w-full border-black border-[1px]">
+            <Image src={img1} width={280} height={100} />
+            <div className="w-full bg-white p-2">
+              <span className=" text-black text-xs">
+                One Earth One Family One Future
+              </span>
             </div>
           </div>
         </div>
