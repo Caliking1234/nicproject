@@ -101,11 +101,10 @@ const ImgSlider = () => {
           <div className=" z-20 absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] text-white w-full text-left p-5">
             <div className="">
               <h1 className=" text-2xl sm:text-4xl my-5 md:text-6xl font-extrabold">
-                Welcome to UP Prosecution
+                Welcome to Department Prosecution
               </h1>
               <p className=" mb-5 text-xs md:text-sm">
-                Any challenges in digital and involving use of technology?We can
-                help you out
+                Upholding Law, Dismantling Crime.
               </p>
             </div>
           </div>
@@ -125,12 +124,12 @@ const ImgSlider = () => {
           <div className=" absolute z-20  top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
             <div className="">
               <h1 className=" text-2xl sm:text-4xl my-5 md:text-6xl font-extrabold">
-                Technology Agnostic
+                A Fair Society: No Tolerance for Injustice.
               </h1>
-              <p className=" mb-5 text-xs md:text-sm">
+              {/* <p className=" mb-5 text-xs md:text-sm">
                 We dont focus on technologies, we focus on solution whatever
                 technology it takes
-              </p>
+              </p> */}
             </div>
           </div>
         </Wrap>
@@ -149,15 +148,15 @@ const ImgSlider = () => {
           <div className=" absolute z-20  top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
             <div className="">
               <h1 className=" text-2xl sm:text-4xl my-5 md:text-6xl font-extrabold">
-                Dotclu recognised as Leader in
+                Prosecuting the Guilty, Protecting the Innocent
               </h1>
-              <h1 className=" text-2xl my-5  font-extrabold">
+              {/* <h1 className=" text-2xl my-5  font-extrabold">
                 the Zinnov Zones ER&D report,2022
               </h1>
               <p className=" mb-5 text-xs md:text-sm">
                 Adjust The Customer&apos;s IT Infrastructure To New,Ever Growing
                 Business & Technical Requirements
-              </p>
+              </p> */}
             </div>
           </div>
         </Wrap>
@@ -176,12 +175,12 @@ const ImgSlider = () => {
           <div className=" absolute z-20 top-[50%] translate-y-[-50%] text-white w-full text-left p-5">
             <div className="">
               <h1 className=" text-2xl sm:text-4xl my-5 md:text-6xl font-extrabold">
-                Webby 2023 Honoree
+                Crimes Exposed, Justice Imposed.
               </h1>
-              <p className="text-xs md:text-sm">
+              {/* <p className="text-xs md:text-sm">
                 Globally recognised for Apps,dApps and Data Management
               </p>
-              <p className=" mb-5 text-xs md:text-sm">Oscar Of Internet</p>
+              <p className=" mb-5 text-xs md:text-sm">Oscar Of Internet</p> */}
             </div>
           </div>
         </Wrap>
